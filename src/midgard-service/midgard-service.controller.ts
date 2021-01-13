@@ -47,7 +47,7 @@ export class MidgardServiceController {
   @Get('txnsByType')
   @ApiOkResponse({
     description:
-      'Enter Offset for pagination offset >=0 and Limit for pagination limit <=50 & >=0',
+      'Enter Offset for pagination offset >=0 and Limit for pagination limit <=50 & >=0 and type=swap,stake,unstake,add,refund,doubleSwap',
   })
   GetTxnsByType(
     @Query('type') type: string,
