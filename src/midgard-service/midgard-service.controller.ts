@@ -132,4 +132,10 @@ export class MidgardServiceController {
   ): Promise<string> {
     return this.MidgardService.GetStatsChanges(interval, from);
   }
+
+  @Get('ThorchainPoolAddress')
+  getProxiedPoolAddress():Promise<string>{
+    return this.MidgardService.GetProxiedPoolAddress();
+  }
+
 }
